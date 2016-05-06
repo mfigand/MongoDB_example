@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Zips</title>
+  <title>Zipcodes-MongoDB</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
 
-<%= yield %>
+<body>
+  <nav class="nav-bar" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Manuel Figueroa</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="white-text" href="https://github.com/mfigand">Github</a></li>
+        <li><a class="white-text" href="https://es.linkedin.com/in/manuelfigueroaandrade">Linkedin</a></li>
+        <li><a class="white-text" href="https://twitter.com/FigandM">Twitter</a></li>
+        <li><a class="white-text" href="http://vfatito.wix.com/mfigand-blog">Blog</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a class="grey-text" href="https://github.com/mfigand">Github</a></li>
+        <li><a class="grey-text" href="https://es.linkedin.com/in/manuelfigueroaandrade">Linkedin</a></li>
+        <li><a class="grey-text" href="https://twitter.com/FigandM">Twitter</a></li>
+        <li><a class="grey-text" href="http://vfatito.wix.com/mfigand-blog">Blog</a></li>
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <header>
+    <h3>MongoDB Example</h3>
+    <p>This is a example of data manipulation ade on Ruby on Rails using MongoDB as Data Base. The technologies i used
+    are JavaScript, JQuery, HTML, CSS and Materialize for Front-end framework. If you like you can clone this repo on my github.</p>
+  </header>
+
+  <div class="row">
+    <section>
+      <%= yield %>
+    </section>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="title">About the author</h5>
+          <p class="grey-text text-lighten-4">Civil engineer that dedicates to web development.
+            <br>
+            <br>
+            <strong><u>Main specialties:</u></strong> Ruby on Rails, JavaScript, Angular, JQuery, HTML, CSS, Git, Unit Testing, MVC.
+          </p>
+        </div>
+
+        <div class="col l3 s12">
+          &nbsp
+        </div>
+
+        <div class="col l3 s12 offset-6">
+          <h5 class="title">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/mfigand">Github</a></li>
+            <li><a class="white-text" href="https://es.linkedin.com/in/manuelfigueroaandrade">Linkedin</a></li>
+            <li><a class="white-text" href="https://twitter.com/FigandM">Twitter</a></li>
+            <li><a class="white-text" href="http://vfatito.wix.com/mfigand-blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="white-text text-lighten-3" href="https://es.linkedin.com/in/manuelfigueroaandrade"><u>Manuel Figueroa Andrade</u></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
 </html>

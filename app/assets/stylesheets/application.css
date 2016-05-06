@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.nav-bar {
+  background-color: #009688 !important;
+}
+
+.nav-names{
+  color: red;
+}
+
+header, section{
+  padding: 1% !important;
+}
+
+.title{
+  color: coral;
+}
